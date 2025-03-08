@@ -1,2 +1,2 @@
-# rabbit-case
-text converter 
+# Rabbit Case
+Text converter 
