@@ -1,0 +1,152 @@
+header {
+  background-color: #355070;
+  padding: 10px 20px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-menu a {
+  margin: 5px 10px;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.logo {
+  height: 64px;  
+  width: 265px;  
+  padding-bottom: 13px;
+  padding-left: 25px;
+  border-radius: 4px;  
+  transition: transform 0.2s ease;  
+}
+
+.logo:hover {
+  transform: scale(1.1);  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  margin-left: 5px;
+  width: 200px;
+  z-index: 1; /* Ensure dropdown is above other content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  padding: 0; /* Remove padding */
+  overflow-y: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px; /* Ensure consistent spacing */
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #355070;
+  text-decoration: underline;
+}
+
+/* Responsive styles 
+@media (min-width: 768px) and (max-width: 1300px){
+nav{
+  justify-content: center;
+}
+}*/
+@media (min-width: 768px) and (max-width: 1100px)
+{
+  nav{
+flex-direction: column;
+justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 60px;
+    align-items: left;
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block;
+    padding-left: 0; /* Remove any padding to ensure centering */
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the navigation links */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines on smaller screens */
+  }
+
+  .dropdown {
+    margin-left: 0; /* Remove left margin for dropdown */
+    margin-top: 15px; /* Add top margin for spacing */
+    width: 100%; /* Ensure full width */
+    padding-bottom: 5px;
+  }
+
+  .dropdown-content {
+    position: relative; /* Change position to relative */
+    margin-left: 5px; /* Remove left margin */
+  }  
+}
