@@ -50,7 +50,7 @@ Ensure you have the following installed:
 
 ✅ Express.js (Backend)
 
-Steps to Set Up
+# Steps to Set Up
 
 1️⃣ Clone the Repository:
 
