@@ -1,0 +1,380 @@
+/* HomeComponent.css */
+.container {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #355070;
+  min-height: 100vh;
+  padding: 0 1rem; /* Add padding for better spacing on smaller screens */
+}
+
+header {
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping of elements */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+
+.content,
+.content1 {
+  background-color: white;
+  color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+.content p {
+  padding: 0.1rem;
+}
+
+.content1 {
+  text-align: left;
+}
+.textarea-container {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 30px;
+}
+
+.textarea-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  resize: vertical; /* Allows vertical resizing only */
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .textarea-container {
+    padding: 0rem;
+  }
+
+  .textarea-container textarea {
+    font-size: 0.9rem;
+  }
+}
+
+.preview {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 100%;
+  max-width: 500px;
+  height: 130px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-top: 17px;
+}
+
+.preview p {
+  margin: 0;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .content,
+  .content1 {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .top-textarea,
+  .bottom-textarea,
+  .preview {
+    width: 100%;
+  }
+
+  .textarea-container {
+    flex-direction: column;
+  }
+
+  .left-textarea,
+  .right-textarea {
+    width: 100%;
+  }
+
+  .logo-name {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo-image {
+    width: 50px;
+  }
+
+  .preview {
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .preview p {
+    font-size: 16px;
+  }
+}
+
+.transformation-options {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 80px;
+  font-size: 17px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .transformation-options {
+    padding-left: 60px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .transformation-options {
+    padding-left: 40px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transformation-options {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+
+.btn1-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  padding-right: 30px;
+}
+
+.btn-421,
+.btn-421 *,
+.btn-421 :after,
+.btn-421 :before,
+.btn-421:after,
+.btn-421:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-421 {
+  -webkit-tap-highlight-color: transparent;
+
+  background-color: transparent;
+  background-image: none;
+  color: #000000;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 15px;
+  line-height: 0.1;
+  margin: 1px;
+}
+.btn-421:disabled {
+  cursor: default;
+}
+.btn-421:-moz-focusring {
+  outline: auto;
+}
+.btn-421 svg {
+  display: block;
+}
+.btn-421 [hidden] {
+  display: none;
+}
+.btn-421 {
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  position: relative;
+  text-transform: none;
+}
+.btn-421 span {
+  mix-blend-mode: difference;
+}
+.btn-421:before {
+  --thickness: 2px;
+  border: var(--thickness) solid #000000;
+  border-radius: 8px;
+  content: "";
+  inset: calc(var(--thickness) * -1);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1.2);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-421:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.btn-421:hover {
+  background-color: transparent;
+}
+@media (max-width: 600px) {
+  .btn1-container {
+    padding-top: 15px;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .btn-421 {
+    padding: 1rem 0.3rem;
+  }
+}
+.input-container {
+  border: 2px dashed #171717;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  background-color: #ffffff;
+  color: #000000; /* Changed to black for visibility */
+  width: 81%;
+  padding: 4rem;
+}
+.input-container input {
+  color: #ffffff;
+  margin-left: 21%;
+  font-size: 0.8rem; /* Adjust the font size as needed */
+  cursor: pointer;
+}
+
+.custom-file-upload {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .input-container {
+    border: 2px dashed #171717;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000; /* Changed to black for visibility */
+    width: 50%;
+    padding: 3rem;
+    transition: background-color 0.3s;
+  }
+  .custom-file-upload {
+    font-size: 14px;
+  }
+  .input-container input {
+    color: #ffffff;
+    margin-left: 24%;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    cursor: pointer;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* or any specific width */
+  /* Centers the container horizontally */
+}
+
+.form-container div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  letter-spacing: 0.3em;
+  margin: 0;
+}
+
+.bottom-text {
+  font-size: 2em;
+  margin-top: -10px;
+}
+
+.stacked-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width of parent container */
+  margin: 20px 0; /* Optional: Adjust as needed for spacing */
+}
+
+.stacked-container {
+  width: fit-content;
+  padding: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
