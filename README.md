@@ -40,9 +40,9 @@ Prerequisites
 
 Ensure you have the following installed:
 
-✅ Node.js (>= v14)
+✅ Node.js
 
-✅ MongoDB (or any preferred database)
+✅ MongoDB
 
 ✅ Git
 
